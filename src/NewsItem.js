@@ -9,7 +9,7 @@ function NewsItem() {
   console.log(index);
   useEffect(() => {
     axios
-      .get('https://newsapi.org/v2/everything?q=tesla&from=2023-11-09&sortBy=publishedAt&apiKey=4f56938e531c4be0a844ca068ceade73')
+      .get('https://newsapi.org/v2/everything?q=apple&from=2023-12-09&to=2023-12-09&sortBy=popularity&apiKey=4f56938e531c4be0a844ca068ceade73')
       .then((res) => {
         setItemData(res.data.articles[index]); // Fetching specific item data using index
       })
@@ -30,7 +30,7 @@ function NewsItem() {
           <p>Author name : {itemData.author}</p>
           <p>Published At : {itemData.publishedAt}</p>
           <p>{itemData.description}</p>
-          <a href={itemData.url}>Learn More...</a>
+          <a href={itemData.url}>Read More...</a>
           </div>
           
         </div>

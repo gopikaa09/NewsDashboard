@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: aliceblue;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -52,10 +55,28 @@
   color: bisque;
   margin: 25px;
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+.pagination li{
+  list-style-type: none;
+}
+.pagination li button{
+  padding: 10px;
+  margin: 1px;
+}
+
+.activePage {
+  background-color: black; /* Set your desired color for the active page */
+  color: #fff; /* Text color for the active page */
+}
+
 
 /* header */
 .header {
-  background-color: blueviolet;
+  background-color: rgb(72, 119, 148);
   color: beige;
   padding: 15px;
   margin-bottom: 50px;
@@ -103,3 +124,5 @@
     width: 100%;
   }
 }
+
+
